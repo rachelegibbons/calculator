@@ -25,12 +25,12 @@ $(function() {
     var result = add(number1, number2);
     $(".add1").text(number1);
     $(".add2").text(number2);
-    $(".result").text(result);
+    $(".resultAdd").text(result);
     $("form#add").hide();
     $("#outputAdd").show();
   });
 
-  $("h2").click(function(){
+  $("#addAgain").click(function(){
     $("form#add").show();
     $("#outputAdd").hide();
   });
@@ -40,15 +40,33 @@ $(function() {
     var number1 = parseInt($("#subtract1").val());
     var number2 = parseInt($("#subtract2").val());
     var result = subtract(number1, number2);
-    $("#outputSubtract").text(result);
+    $(".subtract1").text(number1);
+    $(".subtract2").text(number2);
+    $(".resultSubtract").text(result);
+    $("form#subtract").hide();
+    $("#outputSubtract").show();
   });
+
+  $("#subtractAgain").click(function() {
+    $("form#subtract").show();
+    $("#outputSubtract").hide();
+  })
 
   $("form#multiply").submit(function(event) {
     event.preventDefault();
     var number1 = parseInt($("#multiply1").val());
     var number2 = parseInt($("#multiply2").val());
     var result = multiply(number1, number2);
-    $("#outputMultiply").text(result);
+    $(".multiply1").text(number1);
+    $(".multiply2").text(number2);
+    $(".resultMultiply").text(result);
+    $("form#multiply").hide();
+    $("#outputMultiply").show();
+  });
+
+  $("#multiplyAgain").click(function() {
+    $("form#multiply").show();
+    $("#outputMultiply").hide();
   });
 
   $("form#divide").submit(function(event){
@@ -56,7 +74,16 @@ $(function() {
     var number1 = parseInt($("#divide1").val());
     var number2 = parseInt($("#divide2").val());
     var result = divide(number1, number2);
-    $("#outputDivide").text(result);
+    $(".divide1").text(number1);
+    $(".divide2").text(number2);
+    $(".resultDivide").text(result);
+    $("form#divide").hide();
+    $("#outputDivide").show();
+  });
+
+  $("#divideAgain").click(function(){
+    $("form#divide").show();
+    $("#outputDivide").hide();
   });
 
 });

@@ -1,3 +1,19 @@
 #outputAdd {
   display: none;
+  font-size: 18px;
+}
+
+#outputSubtract {
+  display: none;
+  font-size: 18px;
+}
+
+#outputMultiply {
+  display: none;
+  font-size: 18px;
+}
+
+#outputDivide {
+  display: none;
+  font-size: 18px;
 }

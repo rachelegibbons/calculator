@@ -23,7 +23,16 @@ $(function() {
     var number1 = parseInt($("#add1").val());
     var number2 = parseInt($("#add2").val());
     var result = add(number1, number2);
-    $("#outputAdd").text(result);
+    $(".add1").text(number1);
+    $(".add2").text(number2);
+    $(".result").text(result);
+    $("form#add").hide();
+    $("#outputAdd").show();
+  });
+
+  $("h2").click(function(){
+    $("form#add").show();
+    $("#outputAdd").hide();
   });
 
   $("form#subtract").submit(function(event){

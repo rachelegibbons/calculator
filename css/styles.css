@@ -1,35 +1,8 @@
-#outputAdd {
+#output {
   display: none;
   font-size: 18px;
 }
 
-#outputSubtract {
-  display: none;
-  font-size: 18px;
-}
-
-#outputMultiply {
-  display: none;
-  font-size: 18px;
-}
-
-#outputDivide {
-  display: none;
-  font-size: 18px;
-}
-
-#addSubtract {
-  background-color: #98DCE8;
-}
-
-#multiplyDivide {
-  background-color: #CFE3E8;
-}
-
-#addSubtractButton {
+#submit {
   background-color: #F5609A;
-}
-
-#multiplyDivideButton {
-  background-color: #FF95C8
 }
